@@ -1,0 +1,13 @@
+logging:
+  level: INFO
+  loggers:
+    org.example: DEBUG
+
+server:
+  rootPath: /api/*
+  applicationConnectors:
+    - type: http
+      port: 8080
+
+swagger:
+  resourcePackage: org.example.resources

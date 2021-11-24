@@ -1,0 +1,5 @@
+FROM openjdk:8-jdk-alpine
+ADD target/dropwizard-emr-1.0-SNAPSHOT.jar /app/dropwizard-emr-1.0-SNAPSHOT.jar
+ADD config.yml /app/config.yml
+CMD java -jar /app/dropwizard-emr-1.0-SNAPSHOT.jar server /app/config.yml
+EXPOSE 8080
